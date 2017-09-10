@@ -19,7 +19,8 @@ This repo implements the simple Instagram Clone shown in the YouTube tutorial [M
 ![Logout Page](/readmeImages/logout.png)
 
 ### Creating Posts
-![Create Page](/readmeImages/createpage.png)
+![createpage](https://user-images.githubusercontent.com/12390123/30254011-2db7dd9a-9646-11e7-9b4e-9bac1cf900dd.PNG)
+
 
 ### Navigation
 ![Navigation Page](/readmeImages/logout.png)
