@@ -18,15 +18,15 @@ Users can register with an email and password. This was implemented using the `d
 
 ### Login/Logout
 Users can login with an email and password. This was implemented using the `devise` library.
-![Login Page](/readmeImages/login.png)
+![login](https://user-images.githubusercontent.com/12390123/30254022-84dd5032-9646-11e7-8d63-f4d61ad2bca6.PNG)
+The same library has build-in functionality to allow users to recover forgotten passwords.
+![forgotpassword](https://user-images.githubusercontent.com/12390123/30254020-80cbd554-9646-11e7-9837-ab8a22571ff6.PNG)
 Once a user is logged in, the navigation bar gives them the option to log out.
-![Logout Page](/readmeImages/logout.png)
+![logout](https://user-images.githubusercontent.com/12390123/30254023-874bd348-9646-11e7-8998-c0b0ae3d44e4.PNG)
 
 ### Creating Posts
 Users create a post by uploading an image and providing a description. Currently, users do not have to be logged in to post. 
 ![createpage](https://user-images.githubusercontent.com/12390123/30254011-2db7dd9a-9646-11e7-9b4e-9bac1cf900dd.PNG)
-
-
 
 
 
