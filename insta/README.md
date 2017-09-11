@@ -17,15 +17,14 @@ Users can register with an email and password. This was implemented using the `d
 ![Registration Page](/readmeImages/register.png)
 
 ### Login/Logout
+Users can login with an email and password. This was implemented using the `devise` library.
 ![Login Page](/readmeImages/login.png)
+Once a user is logged in, the navigation bar gives them the option to log out.
 ![Logout Page](/readmeImages/logout.png)
 
 ### Creating Posts
+Users create a post by uploading an image and providing a description. Currently, users do not have to be logged in to post. 
 ![createpage](https://user-images.githubusercontent.com/12390123/30254011-2db7dd9a-9646-11e7-9b4e-9bac1cf900dd.PNG)
-
-
-### Navigation
-![Navigation Page](/readmeImages/logout.png)
 
 
 
