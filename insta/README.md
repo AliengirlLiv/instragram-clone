@@ -9,9 +9,11 @@ This repo implements the simple Instagram Clone shown in the YouTube tutorial [M
 ## App Functionality
 
 ### Home Page
+The home page contains a  shows a list of all images created by all users, organized chronologically (oldest on top). 
 ![Home Page](/readmeImages/createpage.png)
 
 ### Registration
+Users can register with an email and password. This was implemented using the `devise` library.
 ![Registration Page](/readmeImages/register.png)
 
 ### Login/Logout
