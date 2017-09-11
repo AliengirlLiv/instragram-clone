@@ -21,7 +21,7 @@ Users can login with an email and password. This was implemented using the Devis
 ![login](https://user-images.githubusercontent.com/12390123/30258760-0cbfc7f8-9671-11e7-96ff-2deeb8595328.PNG)
 
 The same library has build-in functionality to allow users to recover forgotten passwords.
-![forgotpassword](https://user-images.githubusercontent.com/12390123/30258863-de3235be-9671-11e7-8c77-35c3700c244c.PNG)
+![forgotpassword](https://user-images.githubusercontent.com/12390123/30259176-46ffbe02-9674-11e7-8df6-274c73debeb6.PNG)
 
 Once a user is logged in, the navigation bar gives them the option to log out.
 ![logout](https://user-images.githubusercontent.com/12390123/30258759-0cbf1e0c-9671-11e7-8744-64461bb29b1e.PNG)
@@ -39,7 +39,8 @@ I initially tried to follow the instructions in the tutorial as closely as possi
 
 1. We use more current versions of Bootstrap and Paperclip than used in the tutorial.
 
-2. The files `applications.scss` and `posts.scss` contain additional styling for the Home and Create Post pages.
+2. The files `applications.scss` and `posts.scss` contain a couple minor styling changes for the Home and Create Post pages (e.g. centering the file input).
+![create](https://user-images.githubusercontent.com/12390123/30259174-46fc6ee6-9674-11e7-8e3f-d9ebac0ed69c.PNG)
 
 3. The tutorial's confirmation popup did not work for me. This was fixed by replacing `confirm: 'Are you sure?'` with 		 `data: {confirm: 'Are you sure?'}` in `application.html.erb`.
 
