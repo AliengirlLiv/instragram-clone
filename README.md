@@ -9,7 +9,7 @@ This repo implements the simple Instagram Clone shown in the YouTube tutorial [M
 ## App Functionality
 
 ### Home Page
-The home page contains a  shows a list of all images created by all users, organized chronologically (oldest on top). 
+The home page contains a  shows a list of all images created by all users, organized chronologically (newest on top). 
 ![homepage](https://user-images.githubusercontent.com/12390123/30258758-0cadef6a-9671-11e7-8f04-7d46c13421d6.PNG)
 
 ### Registration
@@ -19,13 +19,15 @@ Users can register with an email and password. This was implemented using the De
 ### Login/Logout
 Users can login with an email and password. This was implemented using the Devise library.
 ![login](https://user-images.githubusercontent.com/12390123/30258760-0cbfc7f8-9671-11e7-96ff-2deeb8595328.PNG)
+
 The same library has build-in functionality to allow users to recover forgotten passwords.
 ![forgotpassword](https://user-images.githubusercontent.com/12390123/30258863-de3235be-9671-11e7-8c77-35c3700c244c.PNG)
+
 Once a user is logged in, the navigation bar gives them the option to log out.
 ![logout](https://user-images.githubusercontent.com/12390123/30258759-0cbf1e0c-9671-11e7-8744-64461bb29b1e.PNG)
 
 ### Creating Posts
-Users create a post by uploading an image and providing a description. Currently, users do not have to be logged in to post. 
+Users create a post by uploading an image and providing a description. Users have to be logged in to post. 
 ![create](https://user-images.githubusercontent.com/12390123/30258756-0ca86d6a-9671-11e7-973f-4b9ce4165222.PNG)
 
 
@@ -48,7 +50,7 @@ I initially tried to follow the instructions in the tutorial as closely as possi
 6. Timestamps are displayed on images, and the images are ordered with the most recent on top.
 ![homepage](https://user-images.githubusercontent.com/12390123/30258758-0cadef6a-9671-11e7-8f04-7d46c13421d6.PNG)
 
-7. Confirmation alerts after the user completes an action (e.g. logging in) disappear after a few seconds (thanks to this SO post with instructions for implementing it).
+7. Confirmation alerts after the user completes an action (e.g. logging in) disappear after a few seconds (thanks to [this SO post](https://stackoverflow.com/questions/26772839/auto-hide-the-flash-messages-in-rails) with instructions for implementing it).
 
 8. (in progress) I tried to make users choose a username when registering so that this username could be displayed on their posts. This is not functional yet, but there are some lines of code related to this new feature (e.g. a username in the "users" table in `schema.rb`.
 
