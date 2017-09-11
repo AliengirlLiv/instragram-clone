@@ -9,36 +9,51 @@ This repo implements the simple Instagram Clone shown in the YouTube tutorial [M
 ## App Functionality
 
 ### Home Page
-The home page contains a  shows a list of all images created by all users, organized chronologically (oldest on top). 
-![homepage](https://user-images.githubusercontent.com/12390123/30254021-82e5c1ce-9646-11e7-9788-be109544fbb0.PNG)
+The home page contains a  shows a list of all images created by all users, organized chronologically (newest on top). 
+![homepage](https://user-images.githubusercontent.com/12390123/30258758-0cadef6a-9671-11e7-8f04-7d46c13421d6.PNG)
 
 ### Registration
 Users can register with an email and password. This was implemented using the Devise library.
-![register](https://user-images.githubusercontent.com/12390123/30254026-88ea8514-9646-11e7-86b9-cf01ee7390b4.PNG)
+![register](https://user-images.githubusercontent.com/12390123/30258757-0cab6d80-9671-11e7-881b-f2084c0d7bf2.PNG)
 
 ### Login/Logout
 Users can login with an email and password. This was implemented using the Devise library.
-![login](https://user-images.githubusercontent.com/12390123/30254022-84dd5032-9646-11e7-8d63-f4d61ad2bca6.PNG)
+![login](https://user-images.githubusercontent.com/12390123/30258760-0cbfc7f8-9671-11e7-96ff-2deeb8595328.PNG)
+
 The same library has build-in functionality to allow users to recover forgotten passwords.
-![forgotpassword](https://user-images.githubusercontent.com/12390123/30254020-80cbd554-9646-11e7-9837-ab8a22571ff6.PNG)
+![forgotpassword](https://user-images.githubusercontent.com/12390123/30259176-46ffbe02-9674-11e7-8df6-274c73debeb6.PNG)
+
 Once a user is logged in, the navigation bar gives them the option to log out.
-![logout](https://user-images.githubusercontent.com/12390123/30254023-874bd348-9646-11e7-8998-c0b0ae3d44e4.PNG)
+![logout](https://user-images.githubusercontent.com/12390123/30258759-0cbf1e0c-9671-11e7-8744-64461bb29b1e.PNG)
 
 ### Creating Posts
-Users create a post by uploading an image and providing a description. Currently, users do not have to be logged in to post. 
-![createpage](https://user-images.githubusercontent.com/12390123/30254011-2db7dd9a-9646-11e7-9b4e-9bac1cf900dd.PNG)
-
+Users create a post by uploading an image and providing a description. Users have to be logged in to post. 
+![create](https://user-images.githubusercontent.com/12390123/30258756-0ca86d6a-9671-11e7-973f-4b9ce4165222.PNG)
 
 
 ## Differences from the tutorial
 
-I tried to follow the instructions in the tutorial as closely as possible, but there were acouple alterations.
+I initially tried to follow the instructions in the tutorial as closely as possible. To see the Instagram Clone as shown in the tutorial, see [this commit](https://github.com/AliengirlLiv/instragram-clone/tree/e540db6ca308ec936625cdd6d27f4ccbe66d6589).
+
+### Additional Features
 
 1. We use more current versions of Bootstrap and Paperclip than used in the tutorial.
 
-2. The files `applications.scss` and `posts.scss` contain additional styling for the home page.
+2. The files `applications.scss` and `posts.scss` contain a couple minor styling changes for the Home and Create Post pages (e.g. centering the file input).
+![create](https://user-images.githubusercontent.com/12390123/30259174-46fc6ee6-9674-11e7-8e3f-d9ebac0ed69c.PNG)
 
 3. The tutorial's confirmation popup did not work for me. This was fixed by replacing `confirm: 'Are you sure?'` with 		 `data: {confirm: 'Are you sure?'}` in `application.html.erb`.
+
+4. Users must be logged in to post images.
+
+5. Both the image and description fields are required for a post to be submitted.
+
+6. Timestamps are displayed on images, and the images are ordered with the most recent on top.
+![homepage](https://user-images.githubusercontent.com/12390123/30258758-0cadef6a-9671-11e7-8f04-7d46c13421d6.PNG)
+
+7. Confirmation alerts after the user completes an action (e.g. logging in) disappear after a few seconds (thanks to [this SO post](https://stackoverflow.com/questions/26772839/auto-hide-the-flash-messages-in-rails) with instructions for implementing it).
+
+8. (in progress) I tried to make users choose a username when registering so that this username could be displayed on their posts. This is not functional yet, but there are some lines of code related to this new feature (e.g. a username in the "users" table in `schema.rb`.
 
 
 
