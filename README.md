@@ -33,7 +33,7 @@ Users create a post by uploading an image and providing a description. Users hav
 
 ## Differences from the tutorial
 
-I initially tried to follow the instructions in the tutorial as closely as possible. To see the Instagram Clone as shown in the tutorial, see this commit.
+I initially tried to follow the instructions in the tutorial as closely as possible. To see the Instagram Clone as shown in the tutorial, see [this commit](https://github.com/AliengirlLiv/instragram-clone/tree/e540db6ca308ec936625cdd6d27f4ccbe66d6589).
 
 ### Additional Features
 
