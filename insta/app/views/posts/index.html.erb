@@ -1,8 +1,8 @@
-<% @posts.each do |x| %>
-	<br>
-	<div class="post-div">
-		<%= image_tag x.image.url(:medium) %>
-		<br>
-		<%= x.description %>
-	</div>
+<% @posts.reverse_each do |x| %>
+  <br>
+  <div class="post-div">
+    <%= image_tag x.image.url(:medium) %>
+    <br>
+    <%= x.description %>
+  </div>
 <% end %>
